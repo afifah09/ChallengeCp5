@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/drawable/back.xml" value="0.144" />
+        <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/drawable/background.xml" value="0.144" />
         <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/fragment_begin.xml" value="0.25" />
+        <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/fragment_detail.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/fragment_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/fragment_profile.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/fragment_register.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/grid_item_view.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/organizer/ChallengeCp5/app/src/main/res/layout/login.xml" value="0.27291666666666664" />
       </map>
     </option>

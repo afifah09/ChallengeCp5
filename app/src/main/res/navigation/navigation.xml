@@ -34,6 +34,9 @@
             app:destination="@id/fragmentLogin"
             app:popUpTo="@id/fragmentHome"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentHome_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/beginFragment"
@@ -46,5 +49,15 @@
         <action
             android:id="@+id/action_beginFragment_to_fragmentRegister"
             app:destination="@id/fragmentRegister" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.challengecp5.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
     </fragment>
 </navigation>
