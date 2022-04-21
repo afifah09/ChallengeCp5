@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_fragmentHome_to_detailFragment"
             app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_fragmentHome_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/beginFragment"
@@ -60,4 +63,9 @@
             app:argType="integer"
             android:defaultValue="-1" />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.challengecp5.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

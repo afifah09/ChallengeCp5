@@ -21,6 +21,7 @@ object ApiClient {
 //        .addInterceptor(logging)
 //        .build()
 
+    //clain api
     private val client = OkHttpClient.Builder()
         .addInterceptor(logging)
         .addInterceptor {
@@ -32,7 +33,7 @@ object ApiClient {
         }
         .build()
 
-
+    //instans api service
     val instance: ApiService by lazy {
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)

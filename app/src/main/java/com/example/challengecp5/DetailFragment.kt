@@ -26,7 +26,7 @@ class DetailFragment : Fragment(){
         super.onViewCreated(view, savedInstanceState)
         homeViewModel= ViewModelProvider(requireActivity())[HomeViewModel::class.java]
         homeViewModel.detailMovie.observe(viewLifecycleOwner){
-
+            //menampilkan detail movie
             binding.apply {
                 detJudul.text = it.title
                 detSipnosis.text = it.overview
@@ -37,8 +37,7 @@ class DetailFragment : Fragment(){
         }
         val id = arguments?.getInt("id",-1)
         homeViewModel.getdetail(id!!)
-        binding.detBack.setOnClickListener(){
-            it.findNavController().popBackStack()
-        }
+
+
     }
 }

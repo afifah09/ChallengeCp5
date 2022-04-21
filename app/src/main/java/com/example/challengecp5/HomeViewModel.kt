@@ -17,7 +17,7 @@ class HomeViewModel:ViewModel() {
     }
     val dataMovie: LiveData<DataMovieRespons> = _dataMovie
 
-
+    //mengambil data movie
     private fun getupcoming(){
         ApiClient.instance.getupcoming().enqueue(object : Callback<DataMovieRespons> {
             override fun onResponse(call: Call<DataMovieRespons>, response: Response<DataMovieRespons>) {
@@ -31,6 +31,7 @@ class HomeViewModel:ViewModel() {
         })
     }
     val detailMovie: MutableLiveData<Detail> = MutableLiveData()
+    //mengambil data detail
     fun getdetail(id:Int){
         ApiClient.instance.getdetail(id).enqueue(object : Callback<Detail> {
             override fun onResponse(call: Call<Detail>, response: Response<Detail>) {

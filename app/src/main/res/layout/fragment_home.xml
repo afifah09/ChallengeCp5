@@ -22,6 +22,7 @@
             android:text="Logout"
             android:backgroundTint="@color/black"/>
         <ImageView
+            android:id="@+id/home_profile"
             android:layout_marginTop="28dp"
             android:layout_marginLeft="250dp"
             android:layout_width="wrap_content"
@@ -29,25 +30,35 @@
             android:src="@drawable/person"/>
     </LinearLayout>
     <HorizontalScrollView
-        android:id="@+id/hvBanner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/content_description"
-        android:scrollbars="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+ihttps://ctxt.io/2/AABgNyHVFQ"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/the_movie"/>
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/the_movie"
+                android:layout_marginEnd="8dp"/>
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/poster_film"
+                android:layout_marginEnd="8dp"/>
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/poster_film2"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
     <TextView
         android:layout_marginTop="8dp"
         android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Populer"
+        android:text="Coming Soon"
         android:textStyle="bold"
         android:textSize="16dp"
         android:textColor="@color/black"/>

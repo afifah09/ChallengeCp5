@@ -11,4 +11,10 @@ class AuthRepository (context: Context) {
     suspend fun insertUser(user: User):Long? = coroutineScope {
         return@coroutineScope myDatabase?.userDao()?.insertUser(user)
     }
+    suspend fun update(user: User):Int? = coroutineScope {
+        return@coroutineScope myDatabase?.userDao()?.updateuser(user)
+    }
+    suspend fun getuser(email:String):User? = coroutineScope {
+        return@coroutineScope myDatabase?.userDao()?.getuser(email)
+    }
 }

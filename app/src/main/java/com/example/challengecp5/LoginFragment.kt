@@ -36,9 +36,11 @@ class LoginFragment : Fragment() {
 
         val islogin = sharedPreference?.getString("islogin","")
         if (islogin==""){
+            //tombol tegister
             binding.tvSignUp.setOnClickListener {
                 it.findNavController().navigate(R.id.action_fragmentLogin_to_fragmentRegister)
             }
+            //tombol login
             binding.btnLogin.setOnClickListener {
 
                 val username = binding.etLoginUser.text.toString()
@@ -52,7 +54,8 @@ class LoginFragment : Fragment() {
                             Toast.makeText(context, "Login Failed", Toast.LENGTH_SHORT).show()
                         }else{
                             val editor = sharedPreference.edit()
-                            editor.putString("islogin",username)
+                            editor.putString("islogin",login.username)
+                            editor.putString("email",username)
                             editor.apply()
                             it.findNavController().navigate(R.id.action_fragmentLogin_to_fragmentHome)
                         }
